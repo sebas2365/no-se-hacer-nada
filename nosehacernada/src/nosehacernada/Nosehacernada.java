@@ -24,16 +24,18 @@ public class Nosehacernada {
         String ciudad;
         int cont=0;
         char letra;
-        do{
-            System.out.println("Introduce Ciudad");
-            ciudad=sc.nextLine();
-            if(ciudad=="fin")
-                break;
+       
             System.out.println("introduce letra");
             letra=sc.nextLine().charAt(0);
-            if(ciudad.charAt(0)==letra){
-            cont++;}
-        }while(!ciudad.equalsIgnoreCase("fin"));
+        
+            do{
+                 System.out.println("Introduce Ciudad");
+                  ciudad=sc.nextLine();
+                
+                if(ciudad.charAt(0)==letra){
+                cont++;}
+            }while(ciudad=="fin")
+         
         System.out.println("resultado\n"+cont);
     }
     
